@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/ilijajolevski/jku-cloudnative
+    repoURL: https://github.com/jonasfallmann/cloud-native
     targetRevision: HEAD
     path: gitops
   destination: 
