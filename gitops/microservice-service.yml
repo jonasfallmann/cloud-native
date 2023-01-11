@@ -5,7 +5,7 @@ metadata:
   namespace: production
 spec:
   selector:
-    app.kubernetes.io/name: microservice-production
+    app.kubernetes.io/name: microservice-deployment-production
   ports:
   - name: name-of-service-port
     protocol: TCP
@@ -19,7 +19,7 @@ metadata:
   namespace: staging
 spec:
   selector:
-    app.kubernetes.io/name: microservice-staging
+    app.kubernetes.io/name: microservice-deployment-staging
   ports:
   - name: name-of-service-port
     protocol: TCP
