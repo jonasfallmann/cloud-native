@@ -6,15 +6,15 @@ metadata:
 spec:
   selector:
     matchLabels:
-      app: microservice
+      app: microservice-production
   replicas: 2 # tells deployment to run 2 pods matching the template
   template:
     metadata:
       labels:
-        app: microservice
+        app: microservice-production
     spec:
       containers:
-      - name: microservice
+      - name: microservice-production
         image: fallmann/cloud-native-microservice:1.0.0
         ports:
         - containerPort: 3000
@@ -31,15 +31,15 @@ metadata:
 spec:
   selector:
     matchLabels:
-      app: microservice
+      app: microservice-staging
   replicas: 2 # tells deployment to run 2 pods matching the template
   template:
     metadata:
       labels:
-        app: microservice
+        app: microservice-staging
     spec:
       containers:
-      - name: microservice
+      - name: microservice-staging
         image: fallmann/cloud-native-microservice:latest
         ports:
         - containerPort: 5000
