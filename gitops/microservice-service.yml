@@ -15,7 +15,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: microservice-service
+  name: microservice-service-staging
   namespace: staging
 spec:
   selector:
