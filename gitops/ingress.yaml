@@ -6,12 +6,11 @@ metadata:
   namespace: production
   annotations:
     ingress.kubernetes.io/ssl-redirect: "false"
-    nginx.ingress.kubernetes.io/use-regex: "true"
 spec:
   rules:
   - http:
       paths:
-      - path: /nginx/(.*)
+      - path: /nginx
         pathType: Prefix
         backend:
           service:
@@ -26,12 +25,11 @@ metadata:
   namespace: production
   annotations:
     ingress.kubernetes.io/ssl-redirect: "false"
-    nginx.ingress.kubernetes.io/use-regex: "true"
 spec:
   rules:
   - http:
       paths:
-      - path: /microservice-production/(.*)
+      - path: /microservice-production
         pathType: Prefix
         backend:
           service:
@@ -46,12 +44,11 @@ metadata:
   namespace: staging
   annotations:
     ingress.kubernetes.io/ssl-redirect: "false"
-    nginx.ingress.kubernetes.io/use-regex: "true"
 spec:
   rules:
   - http:
       paths:
-      - path: /microservice-staging/(.*)
+      - path: /microservice-staging
         pathType: Prefix
         backend:
           service:
